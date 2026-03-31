@@ -7,21 +7,21 @@ permalink: /contact/
 <div class="contact-box">
   <p>Let’s discuss your next biotech communication or design project.</p>
 
-  <div class="form-grid">
+  <form class="form-grid" action="#" method="post">
     <label>
       Name
-      <input type="text" placeholder="Your Name" />
+      <input type="text" name="name" placeholder="Your Name" />
     </label>
     <label>
       Email
-      <input type="email" placeholder="you@example.com" />
+      <input type="email" name="email" placeholder="you@example.com" />
     </label>
     <label>
       Message
-      <textarea placeholder="Tell me a bit about your project goals..."></textarea>
+      <textarea name="message" placeholder="Tell me a bit about your project goals..."></textarea>
     </label>
-    <button class="btn btn-primary" type="button">Send Inquiry</button>
-  </div>
+    <button class="btn btn-primary" type="submit">Send Inquiry</button>
+  </form>
 
   <hr />
 
