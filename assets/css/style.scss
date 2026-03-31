@@ -9,10 +9,15 @@
   --accent: #0b6ea8;
   --accent-2: #0a5f91;
   --accent-dark: #08517e;
+  --accent-hover: #08517e;
+  --accent-active: #063f63;
   --accent-weak: #dff1fb;
   --accent-ink: #0f4466;
   --border: #cde0ee;
-  --ring: rgba(11, 110, 168, 0.28);
+  --ring: #0b6ea8;
+  --control-border: #7893ab;
+  --disabled-bg: #e1eaf2;
+  --disabled-text: #3a5065;
   --shadow: 0 18px 34px rgba(8, 60, 95, 0.14);
   --shadow-soft: 0 8px 20px rgba(8, 47, 75, 0.09);
   --radius: 18px;
@@ -79,6 +84,15 @@ a {
 
 .site-nav a:hover {
   color: var(--accent);
+}
+
+.site-nav a:focus-visible,
+a:focus-visible,
+.btn:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
 }
 
 .section {
@@ -169,9 +183,18 @@ a {
 }
 
 .btn-primary:hover {
-  background: var(--accent-dark);
+  background: var(--accent-hover);
   transform: translateY(-2px);
   box-shadow: 0 14px 24px rgba(10, 86, 129, 0.3);
+}
+
+.btn-primary:focus-visible {
+  background: var(--accent-hover);
+}
+
+.btn-primary:active {
+  background: var(--accent-active);
+  transform: translateY(0);
 }
 
 .btn-secondary {
@@ -184,6 +207,24 @@ a {
   background: var(--accent-weak);
   transform: translateY(-2px);
   box-shadow: var(--shadow-soft);
+}
+
+.btn-secondary:focus-visible {
+  background: var(--accent-weak);
+}
+
+.btn-secondary:active {
+  background: #cce8f8;
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  background: var(--disabled-bg);
+  color: var(--disabled-text);
+  border-color: var(--control-border);
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .profile {
@@ -319,8 +360,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-  outline: 2px solid var(--ring);
-  border-color: var(--accent);
+  outline: 3px solid var(--ring);
+  border-color: var(--control-border);
 }
 
 textarea {
