@@ -1,16 +1,25 @@
 title: "Jalal Khan Utman"
 name: "Jalal Khan Utman"
 description: "Biotechnology researcher bridging computational insights with biological realities through wet-lab experimentation, in-silico therapeutics, and scientific visualization for translational healthcare innovation."
-email: "contact@jalalkhan.me"
+email: "hello@jalalkhan.me"
 url: "https://jalalkhan.me"
 baseurl: ""
+
+# Social & Professional Links
 linkedin_url: "https://www.linkedin.com/in/jalal-utman-56bb83193"
 github_username: "jalalkhanutmanzai"
+
+# Technical Settings
 timezone: UTC
 markdown: kramdown
 permalink: pretty
+
+# Plugins for Search Engine Optimization
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
 defaults:
   - scope:
       path: ""
