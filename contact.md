@@ -29,3 +29,12 @@ permalink: /contact/
   <p><strong>LinkedIn:</strong> <a href="{{ site.linkedin_url }}">{{ site.linkedin_url | remove: 'https://' }}</a></p>
   <p><strong>GitHub:</strong> <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a></p>
 </div>
+
+<div class="contact-box">
+  <h2>Preferred Collaboration Format</h2>
+  <ul>
+    <li>Short project brief (objective, target timeline, expected deliverables)</li>
+    <li>Relevant datasets, molecular targets, or conceptual sketches (if available)</li>
+    <li>Communication preference for updates (email or LinkedIn)</li>
+  </ul>
+</div>

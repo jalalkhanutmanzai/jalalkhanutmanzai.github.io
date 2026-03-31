@@ -1,14 +1,15 @@
 ---
 ---
 :root {
-  --bg: #f7f9fc;
+  --bg: #f3f7fb;
   --surface: #ffffff;
   --text: #132031;
   --muted: #5a6b7f;
-  --accent: #0e5d8d;
-  --accent-dark: #0b4b72;
-  --border: #dbe5ef;
-  --shadow: 0 10px 25px rgba(14, 93, 141, 0.08);
+  --accent: #0f6ea5;
+  --accent-dark: #0b4f76;
+  --border: #d5e2ee;
+  --shadow: 0 16px 36px rgba(15, 82, 121, 0.11);
+  --radius: 16px;
 }
 
 * {
@@ -21,6 +22,8 @@ body {
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
+  background-image: radial-gradient(circle at 10% 10%, rgba(15, 110, 165, 0.07), transparent 35%),
+    radial-gradient(circle at 85% 0%, rgba(11, 79, 118, 0.06), transparent 40%);
 }
 
 a {
@@ -34,7 +37,8 @@ a {
 }
 
 .site-header {
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -52,6 +56,7 @@ a {
 .brand {
   font-weight: 800;
   color: var(--text);
+  letter-spacing: 0.2px;
 }
 
 .site-nav {
@@ -73,6 +78,10 @@ a {
   padding: 3.25rem 0;
 }
 
+.section-soft {
+  background: linear-gradient(180deg, rgba(15, 110, 165, 0.08), rgba(15, 110, 165, 0.02));
+}
+
 .page-title {
   margin: 0 0 1.25rem;
   font-size: clamp(1.8rem, 4vw, 2.4rem);
@@ -85,9 +94,18 @@ a {
   align-items: center;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 18px;
+  border-radius: calc(var(--radius) + 4px);
   padding: 2rem;
   box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 0.65rem !important;
 }
 
 .hero h1 {
@@ -110,14 +128,14 @@ a {
 .btn {
   display: inline-block;
   padding: 0.75rem 1.1rem;
-  border-radius: 10px;
+  border-radius: 11px;
   font-weight: 600;
   border: 1px solid transparent;
   transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: linear-gradient(140deg, var(--accent), #0b5884);
   color: #fff;
 }
 
@@ -139,10 +157,36 @@ a {
 
 .profile {
   width: 100%;
-  border-radius: 16px;
+  border-radius: var(--radius);
   border: 1px solid var(--border);
   aspect-ratio: 1 / 1;
   object-fit: cover;
+}
+
+.section-title {
+  margin: 0 0 1.1rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.stat-grid,
+.feature-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.stat-card,
+.feature-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.15rem;
+  box-shadow: 0 8px 20px rgba(19, 32, 49, 0.05);
+}
+
+.stat-card h3,
+.feature-card h3 {
+  margin: 0 0 0.45rem;
 }
 
 .card-grid {
@@ -154,7 +198,7 @@ a {
   break-inside: avoid;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: var(--radius);
   margin: 0 0 1rem;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(19, 32, 49, 0.04);
@@ -169,6 +213,8 @@ a {
 .card img {
   width: 100%;
   display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
 }
 
 .card .card-body {
@@ -178,8 +224,8 @@ a {
 .tag {
   display: inline-block;
   font-size: 0.77rem;
-  color: #0c486e;
-  background: #e6f2fa;
+  color: #0a4468;
+  background: #deeff9;
   border-radius: 999px;
   padding: 0.2rem 0.6rem;
   margin-bottom: 0.5rem;
@@ -194,7 +240,7 @@ a {
 .tier {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: var(--radius);
   padding: 1.2rem;
   box-shadow: 0 4px 10px rgba(19, 32, 49, 0.04);
 }
@@ -212,8 +258,10 @@ a {
 .contact-box {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: var(--radius);
   padding: 1.2rem;
+  box-shadow: 0 8px 20px rgba(19, 32, 49, 0.05);
+  margin-bottom: 1rem;
 }
 
 .form-grid {
@@ -230,9 +278,23 @@ textarea {
   font: inherit;
 }
 
+input:focus,
+textarea:focus {
+  outline: 2px solid rgba(15, 110, 165, 0.28);
+  border-color: var(--accent);
+}
+
 textarea {
   min-height: 120px;
   resize: vertical;
+}
+
+.highlight-panel {
+  background: linear-gradient(140deg, #eef6fc, #f7fbff);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .site-footer {
