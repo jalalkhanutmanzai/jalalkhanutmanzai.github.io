@@ -1,0 +1,26 @@
+name: contrast-gate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  contrast-and-build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Contrast audit
+        run: ruby scripts/contrast_audit.rb
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build

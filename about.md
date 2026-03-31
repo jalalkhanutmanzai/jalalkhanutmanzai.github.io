@@ -14,6 +14,10 @@ I am an MS Biotechnology researcher focused on translational oncology and integr
   </p>
 </div>
 
+<div class="hero-media">
+  <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=1600&q=80" alt="Biomedical research laboratory equipment and molecular workstations" />
+</div>
+
 ## Education
 
 - **Master of Science in Biotechnology**, Pak-Austria Fachhochschule Institute of Applied Sciences and Technology *(01/02/2024 - Current)*
@@ -37,3 +41,12 @@ My academic objective is to bridge mechanistic wet-lab biology with computationa
 - Molecular dynamics-informed candidate validation and structure-driven hypothesis testing
 - Nanobiotechnology applications for wound healing and regenerative medicine
 - Reproducible computational research systems for translational biotech pipelines
+
+## Coursework
+
+- Trends in Cancer Biology
+- Brain Disorders
+- Advances in Genetic Engineering
+- Nanobiotechnology
+- Medical Genetics
+- Drug-Induced Biosignaling
