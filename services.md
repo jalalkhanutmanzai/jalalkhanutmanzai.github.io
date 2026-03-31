@@ -14,7 +14,7 @@ This page presents my core technical competencies and collaboration-ready servic
 - Western blotting
 - Cytotoxicity assays: PrestoBlue, MTT, and SRB
 
-## In-Silico &amp; Computational Expertise
+## In-silico &amp; Computational Expertise
 
 - Molecular docking
 - Molecular dynamics (MD) simulations with GROMACS
