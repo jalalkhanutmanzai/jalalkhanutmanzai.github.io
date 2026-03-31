@@ -4,24 +4,29 @@ title: Services
 permalink: /services/
 ---
 
-Choose a package that fits your project scope. All offerings below use placeholder rates and descriptions.
+This page presents my core technical competencies and collaboration-ready services at the intersection of biotechnology research, computational therapeutics, and scientific communication.
 
-<div class="pricing">
-  <section class="tier">
-    <h3>Basic</h3>
-    <p class="price">$199</p>
-    <p>Starter package for one small design deliverable and one revision cycle.</p>
-  </section>
+## Wet-Lab Expertise
 
-  <section class="tier">
-    <h3>Standard</h3>
-    <p class="price">$499</p>
-    <p>Expanded package for multiple assets, structured feedback, and two revision cycles.</p>
-  </section>
+- Molecular biology workflows
+- Mammalian cell culture
+- Polymerase chain reaction (PCR)
+- Western blotting
+- Cytotoxicity assays: PrestoBlue, MTT, and SRB
 
-  <section class="tier">
-    <h3>Premium</h3>
-    <p class="price">$999</p>
-    <p>Comprehensive package for complete visual direction and multi-format final assets.</p>
-  </section>
-</div>
+## In-Silico &amp; Computational Expertise
+
+- Molecular docking
+- Molecular dynamics (MD) simulations with GROMACS
+- AutoDock tools
+- Linux command-line operations
+- High-performance computing (HPC) execution
+- Bash scripting for reproducible workflows
+
+## Freelance Services (Storefront)
+
+- **Scientific Visualizations (BioRender/Canva):** Publication-grade figures, pathway schematics, and communication visuals for academic and clinical audiences.
+- **Custom MD Simulation Workflows:** End-to-end setup and automation of protein-ligand simulation pipelines for research-grade computational studies.
+- **Brand Design / Digital Strategy:** Science-aligned brand identity and digital communication assets for biotech, health, and research-driven ventures.
+
+For collaborations, please use the contact page with your project scope, timeline, and intended research or business outcomes.

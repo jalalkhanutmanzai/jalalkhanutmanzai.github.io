@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="container nav-wrap">
-    <a class="brand" href="{{ '/' | relative_url }}">Academic Portfolio</a>
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.name | default: site.title }}</a>
     <nav class="site-nav" aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/about' | relative_url }}">About</a>

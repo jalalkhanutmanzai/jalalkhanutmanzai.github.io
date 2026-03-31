@@ -5,7 +5,7 @@ permalink: /contact/
 ---
 
 <div class="contact-box">
-  <p>Let’s discuss your next biotech communication or design project.</p>
+  <p>For research collaborations, PhD-focused academic opportunities, or freelance service inquiries, please share your project details below.</p>
 
   <form class="form-grid" action="#" method="post">
     <label>
@@ -18,14 +18,14 @@ permalink: /contact/
     </label>
     <label>
       Message
-      <textarea name="message" placeholder="Tell me a bit about your project goals..."></textarea>
+      <textarea name="message" placeholder="Describe your collaboration goals, timeline, and expected outcomes..."></textarea>
     </label>
     <button class="btn btn-primary" type="submit">Send Inquiry</button>
   </form>
 
   <hr />
 
-  <p><strong>Email:</strong> hello@yourdomain.com</p>
-  <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/yourprofile</a></p>
-  <p><strong>Behance:</strong> <a href="#">behance.net/yourprofile</a></p>
+  <p><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <p><strong>LinkedIn:</strong> <a href="{{ site.linkedin_url }}">{{ site.linkedin_url | remove: 'https://' }}</a></p>
+  <p><strong>GitHub:</strong> <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a></p>
 </div>
