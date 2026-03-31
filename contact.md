@@ -5,36 +5,28 @@ permalink: /contact/
 ---
 
 <div class="contact-box">
-  <p>For research collaborations, PhD-focused academic opportunities, or freelance service inquiries, please share your project details below.</p>
+  <p>For research collaborations regarding <strong>Glioblastoma (GBM)</strong>, PhD opportunities in Germany, or <strong>In-Silico</strong> freelance inquiries, please use the form below.</p>
 
-  <form class="form-grid" action="#" method="post">
+  <form class="form-grid" action="https://formspree.io/f/mdapzbqd" method="POST">
     <label>
       Name
-      <input type="text" name="name" placeholder="Your Name" />
+      <input type="text" name="name" placeholder="Your Name" required />
     </label>
     <label>
       Email
-      <input type="email" name="email" placeholder="you@example.com" />
+      <input type="email" name="_replyto" placeholder="you@example.com" required />
     </label>
     <label>
       Message
-      <textarea name="message" placeholder="Describe your collaboration goals, timeline, and expected outcomes..."></textarea>
+      <textarea name="message" placeholder="Details regarding molecular targets, GROMACS protocols, or illustration briefs..." required></textarea>
     </label>
+    <input type="text" name="_gotcha" style="display:none" />
     <button class="btn btn-primary" type="submit">Send Inquiry</button>
   </form>
 
   <hr />
 
-  <p><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-  <p><strong>LinkedIn:</strong> <a href="{{ site.linkedin_url }}">{{ site.linkedin_url | remove: 'https://' }}</a></p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a></p>
-</div>
-
-<div class="contact-box">
-  <h2>Preferred Collaboration Format</h2>
-  <ul>
-    <li>Short project brief (objective, target timeline, expected deliverables)</li>
-    <li>Relevant datasets, molecular targets, or conceptual sketches (if available)</li>
-    <li>Communication preference for updates (email or LinkedIn)</li>
-  </ul>
+  <p><strong>Professional Email:</strong> <a href="mailto:hello@jalalkhan.me">hello@jalalkhan.me</a></p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jalal-utman-56bb83193">linkedin.com/in/jalal-utman-56bb83193</a></p>
+  <p><strong>GitHub:</strong> <a href="https://github.com/jalalkhanutmanzai">github.com/jalalkhanutmanzai</a></p>
 </div>
