@@ -1,0 +1,14 @@
+title: "Academic Portfolio"
+description: "Minimal academic Jekyll portfolio for biotechnology and design services."
+url: "https://jalalkhan.me"
+baseurl: ""
+timezone: UTC
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
