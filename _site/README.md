@@ -1,1 +1,0 @@
-# jalalkhanutmanzai.github.io
