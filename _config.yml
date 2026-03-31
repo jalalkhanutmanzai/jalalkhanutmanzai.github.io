@@ -1,7 +1,11 @@
-title: "Academic Portfolio"
-description: "Minimal academic Jekyll portfolio for biotechnology and design services."
+title: "Jalal Khan Utman"
+name: "Jalal Khan Utman"
+description: "Biotechnology researcher bridging computational insights with biological realities through wet-lab experimentation, in-silico therapeutics, and scientific visualization for translational healthcare innovation."
+email: "jalalkhanutman154@gmail.com"
 url: "https://jalalkhan.me"
 baseurl: ""
+linkedin_url: "https://www.linkedin.com/in/jalal-utman-56bb83193"
+github_username: "jalalkhanutmanzai"
 timezone: UTC
 markdown: kramdown
 permalink: pretty

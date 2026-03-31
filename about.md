@@ -4,26 +4,21 @@ title: About
 permalink: /about/
 ---
 
-I am a multidisciplinary professional focused on biotechnology workflows and visual communication for technical audiences. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum tortor sed sapien cursus, ut tempus augue bibendum.
+I am an MS Biotechnology researcher focused on translational oncology and integrative computational biology. My current work combines cell-based experimental systems with in-silico validation to identify and characterize therapeutic candidates for complex disease models.
 
-## Educational Background
+## Education
 
-- Bachelor-level studies in Biotechnology and Life Sciences
-- Advanced coursework in laboratory quality systems and experimental documentation
-- Ongoing professional development in digital design and visual storytelling
+- **Master of Science in Biotechnology**, Pak-Austria Fachhochschule Institute of Applied Sciences and Technology *(01/02/2024 - Current)*
+- **Bachelor of Science in Biotechnology**, COMSATS University Islamabad *(2020 - 2024)*
 
-## Core Wet Lab Skills
+## Professional Experience
 
-- Skill A: Sample preparation and sterile handling
-- Skill B: Buffer preparation and protocol standardization
-- Skill C: Basic instrument operation and quality checks
+- **University Research Assistant**, Cell and Tissue Culture Lab, PAF-IAST *(01/08/2024 - Current)*  
+  Responsible for aseptic handling of mammalian cell lines, routine culture maintenance, and execution of cell viability assays to support therapeutic evaluation studies.
 
-## Core Dry Lab Skills
+- **Biology Lecturer**, Hashir Institute of Medical Sciences *(01/02/2024 - 01/12/2025)*  
+  Delivered applied biology instruction with emphasis on molecular mechanisms, laboratory understanding, and evidence-based scientific communication.
 
-- Skill A: Data organization and reporting
-- Skill B: Experimental workflow mapping
-- Skill C: Scientific visual layout and figure preparation
+## Research Orientation
 
-## Professional Focus
-
-I bridge biotech communication and design execution using clear, structured visuals. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat magna non dui accumsan, eu finibus lorem posuere.
+My academic objective is to bridge mechanistic wet-lab biology with computational therapeutics, enabling robust and reproducible insights for next-generation biomedical research and European PhD-level inquiry.
