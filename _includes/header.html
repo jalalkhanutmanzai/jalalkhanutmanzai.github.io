@@ -1,18 +1,18 @@
-<header class="site-header" data-header>
-  <div class="container nav-shell">
-    <a class="brand-mark" href="{{ '/' | relative_url }}" aria-label="{{ site.name | default: site.title }} home">
-      <span class="brand-orb" aria-hidden="true">JK</span>
-      <span>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.name | default: site.title }} home">
+      <span class="brand-mark">JK</span>
+      <span class="brand-text">
         <strong>{{ site.name | default: site.title }}</strong>
-        <small>Biotechnology Research</small>
+        <small>Biotechnology Researcher</small>
       </span>
     </a>
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
-      <a href="{{ '/services/' | relative_url }}">Services</a>
-      <a class="nav-cta" href="{{ '/contact/' | relative_url }}">Contact</a>
+      <a href="{{ '/' | relative_url }}#profile">Profile</a>
+      <a href="{{ '/' | relative_url }}#experience">Experience</a>
+      <a href="{{ '/' | relative_url }}#projects">Projects</a>
+      <a href="{{ '/' | relative_url }}#skills">Skills</a>
+      <a class="nav-button" href="{{ '/contact/' | relative_url }}">Contact</a>
     </nav>
   </div>
 </header>
