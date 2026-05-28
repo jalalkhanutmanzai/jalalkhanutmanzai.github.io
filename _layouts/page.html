@@ -1,12 +1,15 @@
 ---
 layout: default
 ---
-<section class="section">
-  <div class="container">
+<section class="section page-shell-section">
+  <div class="container page-shell">
     {% if page.title %}
-      <h1 class="page-title">{{ page.title }}</h1>
+      <div class="page-title-block reveal-up">
+        <p class="eyebrow">Profile Section</p>
+        <h1 class="page-title">{{ page.title }}</h1>
+      </div>
     {% endif %}
-    <div class="page-content">
+    <div class="page-content reveal-up">
       {{ content }}
     </div>
   </div>
