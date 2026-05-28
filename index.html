@@ -1,110 +1,187 @@
 ---
 layout: default
 title: Home
-description: "Portfolio of Jalal Khan Utman, a biotechnology researcher working across experimental biology, molecular modeling, and scientific communication."
+description: "Portfolio of Jalal Khan Utman, biotechnology researcher focused on neuro-oncology, cell based assays, molecular modeling, and scientific communication."
 ---
 
-<section class="hero-lab section">
-  <div class="container hero-lab-grid">
-    <div class="hero-lab-copy reveal-up">
+<section class="hero section">
+  <div class="container hero-grid">
+    <div class="hero-copy">
       <p class="eyebrow">Biotechnology Research Portfolio</p>
-      <h1>Research built like a living system.</h1>
-      <p class="hero-lede">
-        I am <strong>Jalal Khan Utman</strong>, a Biotechnology researcher working across cell based experimentation, computational therapeutics, and research visuals for biomedical projects.
+      <h1>Jalal Khan Utman</h1>
+      <p class="hero-title">Biotechnology researcher focused on neuro-oncology, molecular modeling, and translational biomedical research.</p>
+      <p class="hero-text">
+        I bridge wet-lab biology with computational analysis through cell based assays, nanoparticle research, molecular docking, GROMACS MD simulations, and scientific visualization.
       </p>
       <div class="button-row">
-        <a class="btn btn-primary" href="{{ '/portfolio/' | relative_url }}">Explore Work</a>
-        <a class="btn btn-secondary" href="{{ '/services/' | relative_url }}">View Services</a>
+        <a class="btn btn-primary" href="{{ '/portfolio/' | relative_url }}">View Research Portfolio</a>
+        <a class="btn btn-secondary" href="{{ '/contact/' | relative_url }}">Contact Me</a>
       </div>
     </div>
-
-    <div class="bio-console reveal-up" style="--delay: 120ms">
-      <div class="console-topline">
-        <span>Research Console</span>
-        <span>Profile System</span>
+    <aside class="hero-card">
+      <img src="{{ site.baseurl }}/assets/images/profile.jpg" alt="Jalal Khan Utman" class="profile-img" />
+      <div class="hero-card-body">
+        <p class="status">MS Biotechnology, PAF-IAST</p>
+        <p>Experimental biology, molecular modeling, and scientific communication.</p>
       </div>
-      <img class="console-portrait" src="{{ site.baseurl }}/assets/images/profile.jpg" alt="Jalal Khan Utman, biotechnology researcher" />
-      <div class="signal-stack" aria-label="Research focus areas">
-        <span>Cell Biology</span>
-        <span>Molecular Modeling</span>
-        <span>Scientific Visualization</span>
-      </div>
-    </div>
+    </aside>
   </div>
 </section>
 
-<section class="section strip-section">
-  <div class="container research-strip reveal-up">
-    <div>
-      <span class="strip-number">01</span>
-      <strong>Experimental Biology</strong>
-      <p>Cell culture, viability assays, biochemical profiling, and research workflow planning.</p>
-    </div>
-    <div>
-      <span class="strip-number">02</span>
-      <strong>Computational Therapeutics</strong>
-      <p>Docking interpretation, GROMACS workflow logic, PyMOL visuals, and reproducible summaries.</p>
-    </div>
-    <div>
-      <span class="strip-number">03</span>
-      <strong>Scientific Communication</strong>
-      <p>Manuscript ready figures, technical writing, research reports, and presentation narratives.</p>
-    </div>
+<section class="contact-strip">
+  <div class="container contact-grid">
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <a href="{{ site.linkedin_url }}">LinkedIn</a>
+    <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+    <span>Haripur, Pakistan</span>
   </div>
 </section>
 
-<section class="section orbit-section">
-  <div class="container orbit-grid">
-    <div class="section-head reveal-up">
-      <p class="eyebrow">Research Identity</p>
-      <h2>A portfolio designed around evidence, clarity, and scientific execution.</h2>
+<section id="profile" class="section alt-section">
+  <div class="container two-col">
+    <div>
+      <p class="eyebrow">About Me</p>
+      <h2>Dedicated biotechnology researcher bridging computational insights with biological realities.</h2>
+    </div>
+    <div>
       <p>
-        The site presents research capability through a sharper visual system, clearer hierarchy, and stronger paths toward portfolio review or collaboration.
+        I possess hands-on experience in molecular biology, nanoparticle synthesis, and cell based assays, particularly using Glioblastoma models such as T98G and U87 cell lines. My wet-lab experience is paired with molecular docking and in-silico drug discovery skills.
       </p>
-    </div>
-    <div class="orbit-card reveal-up" style="--delay: 120ms">
-      <div class="orbit-ring" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="orbit-content">
-        <strong>Focus Matrix</strong>
-        <p>Wet lab biology, molecular simulation, scientific figures, writing, and academic positioning.</p>
+      <p>
+        My work is oriented toward translational biomedical research, complex cellular signaling pathways, neuro-oncology, targeted therapeutics, and clear scientific communication.
+      </p>
+      <div class="metric-row">
+        <div><strong>EQF 7</strong><span>MS Biotechnology</span></div>
+        <div><strong>GBM</strong><span>T98G and U87 models</span></div>
+        <div><strong>GROMACS</strong><span>MD simulation workflows</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section capability-section">
+<section id="experience" class="section">
   <div class="container">
-    <div class="section-head compact reveal-up">
-      <p class="eyebrow">Core Work</p>
-      <h2>From biological question to refined scientific output.</h2>
+    <div class="section-head">
+      <p class="eyebrow">Experience</p>
+      <h2>Academic, laboratory, and teaching experience.</h2>
     </div>
-    <div class="feature-grid stagger-grid">
-      <article class="feature-card reveal-up">
-        <h3>Research Framing</h3>
-        <p>Convert broad biological ideas into structured questions, measurable workflows, and literature aligned project direction.</p>
+    <div class="timeline">
+      <article class="timeline-item">
+        <span>Aug 2024 to Current</span>
+        <h3>University Research Assistant</h3>
+        <p>Cell and Tissue Culture Lab, Department of Biological and Health Sciences, PAF-IAST Haripur. Aseptic handling of mammalian cell lines, sterile techniques, cell viability assays, and scientific illustrations.</p>
       </article>
-      <article class="feature-card reveal-up">
-        <h3>Technical Execution</h3>
-        <p>Support experimental planning, computational interpretation, and reproducible documentation for biomedical research work.</p>
+      <article class="timeline-item">
+        <span>Jan 2025 to Current</span>
+        <h3>University Teaching Assistant</h3>
+        <p>Assisting in academic instruction, experimental design, and laboratory sessions.</p>
       </article>
-      <article class="feature-card reveal-up">
-        <h3>Visual Translation</h3>
-        <p>Turn complex mechanisms, assays, and modeling outcomes into clean visuals and publication ready research narratives.</p>
+      <article class="timeline-item">
+        <span>Feb 2024 to Dec 2025</span>
+        <h3>Biology Lecturer</h3>
+        <p>Hashir Institute of Medical Sciences, Haripur. Delivered lectures and managed academic activities for Allied Health Sciences programs.</p>
+      </article>
+      <article class="timeline-item">
+        <span>Sep 2023 to Dec 2023</span>
+        <h3>University Research Assistant</h3>
+        <p>Photosynthesis Research Lab, COMSATS University Abbottabad. Conducted research and laboratory experiments within photosynthesis and biotechnology domains.</p>
       </article>
     </div>
   </div>
 </section>
 
-<section class="section closing-panel-section">
+<section id="projects" class="section alt-section">
   <div class="container">
-    <div class="closing-panel reveal-up">
-      <p class="eyebrow">Collaboration</p>
-      <h2>Need a research profile, figure, report, or computational biology workflow refined?</h2>
-      <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Send a Project Brief</a>
+    <div class="section-head">
+      <p class="eyebrow">Projects</p>
+      <h2>Research projects with wet-lab and computational depth.</h2>
     </div>
+    <div class="project-grid">
+      <article class="project-card">
+        <p class="tag">Open Source Repository</p>
+        <h3>GROMACS Protein-Ligand MD Protocol</h3>
+        <p>Lead developer of a production-ready Molecular Dynamics simulation protocol for protein-ligand complexes using GROMACS 2024.x, automated bash scripts, realistic MDP files, SLURM templates, CHARMM-GUI/CGenFF and ACPYPE/GAFF2 workflows.</p>
+        <a href="https://github.com/jalalkhanutmanzai/gromacs-md-protocol">View Repository</a>
+      </article>
+      <article class="project-card">
+        <p class="tag">Master's Thesis</p>
+        <h3>β-Ionone in Human Glioblastoma Cell Lines</h3>
+        <p>Graduate research investigating the mechanism and therapeutic potential of β-Ionone in Glioblastoma T98G models through in-vitro experimentation, biochemical assays, molecular docking, and GROMACS based MD simulations.</p>
+      </article>
+      <article class="project-card">
+        <p class="tag">Nanobiotechnology</p>
+        <h3>Polydopamine Nanoparticles for Diabetic Wound Healing</h3>
+        <p>Participation in synthesis, drug loading, and physicochemical characterization of PDA nanoparticles for diabetic wound healing research.</p>
+      </article>
+      <article class="project-card">
+        <p class="tag">GBM Nanoparticles</p>
+        <h3>Green Synthesis and Loading of ZnO Nanoparticles</h3>
+        <p>Participation in green synthesis, drug loading, and characterization of ZnO nanoparticles for glioblastoma cell line studies.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Skills</p>
+      <h2>Laboratory, computational, and scientific communication skills.</h2>
+    </div>
+    <div class="skill-columns">
+      <article>
+        <h3>Scientific and Laboratory</h3>
+        <p>Molecular biology, nanotechnology, protein analysis, clinical biochemistry, PCR and RT-qPCR, Western blotting, ELISA, microscopy, immunohistochemistry, MTT, PrestoBlue, SRB, cell freezing, thawing, passaging, and counting.</p>
+      </article>
+      <article>
+        <h3>Digital and Computational</h3>
+        <p>Molecular docking, MD simulations with GROMACS, AutoDock Tools, PyMOL, Avogadro, BioRender, Canva, Bash scripting, HPC and SLURM, Linux, Conda, Mamba, Apptainer, Singularity, CHARMM36m, and CGenFF.</p>
+      </article>
+      <article>
+        <h3>Research and Communication</h3>
+        <p>Scientific research, experimental data gathering, protocol development, data analysis, teaching assistance, visual presentation, manuscript preparation, and communication with scientific and non-scientific audiences.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt-section">
+  <div class="container two-col">
+    <div>
+      <p class="eyebrow">Education</p>
+      <h2>Formal training in biotechnology and biomedical research.</h2>
+    </div>
+    <div class="education-list">
+      <article><strong>Master of Science in Biotechnology</strong><span>PAF-IAST, Haripur, 2024 to Current</span></article>
+      <article><strong>Bachelor of Science in Biotechnology</strong><span>COMSATS University Islamabad, Abbottabad Campus, 2020 to 2024</span></article>
+      <article><strong>HSSC Pre-Medical</strong><span>The Peace Group of Schools and Colleges, Haripur, 2017 to 2019</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Workshops and Scientific Activities</p>
+      <h2>Training, organizing, and conference participation.</h2>
+    </div>
+    <div class="pill-cloud">
+      <span>Cell Culture Techniques for Drug Discovery and Development, Organizer and Trainer</span>
+      <span>Ethical Animal Handling and Experimental Techniques Workshop, Organizer</span>
+      <span>Breast Cancer Awareness Symposium, Organizer</span>
+      <span>International Conference on Future of Healthcare, Organizer</span>
+      <span>Nanomedicine Preparation and Characterization Workshop</span>
+      <span>NGS Data Analysis and Bioinformatics Workshop</span>
+      <span>Regenerative Medicine and 3D Bioprinting Workshop</span>
+      <span>Research Methodology Course</span>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container cta-panel">
+    <p class="eyebrow">Contact</p>
+    <h2>Open for research collaboration, scientific visualization, and computational biology support.</h2>
+    <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Send Inquiry</a>
   </div>
 </section>
