@@ -1,15 +1,12 @@
 title: "Jalal Khan Utman"
 name: "Jalal Khan Utman"
-description: "Biotechnology researcher working across experimental biology, molecular modeling, scientific writing, and research visual communication."
+description: "Biotechnology researcher focused on neuro-oncology, molecular modeling, cell based assays, nanoparticle research, and scientific communication."
 email: "hello@jalalkhan.me"
 url: "https://jalalkhan.me"
 baseurl: ""
 
 linkedin_url: "https://www.linkedin.com/in/jalal-khan-utman-56bb83193"
 github_username: "jalalkhanutmanzai"
-
-focus_statement: "Biotechnology researcher connecting experimental biology, computational therapeutics, and scientific communication."
-availability: "Open for research collaboration and scientific communication work"
 
 timezone: UTC
 markdown: kramdown
