@@ -7,6 +7,27 @@ baseurl: ""
 
 linkedin_url: "https://www.linkedin.com/in/jalal-khan-utman-56bb83193"
 github_username: "jalalkhanutmanzai"
+fiverr_url: "https://www.fiverr.com/jalalkhan326"
+author:
+  name: "Jalal Khan Utman"
+  type: Person
+  url: "https://jalalkhan.me/"
+social:
+  name: "Jalal Khan Utman"
+  links:
+    - "https://www.linkedin.com/in/jalal-khan-utman-56bb83193"
+    - "https://github.com/jalalkhanutmanzai"
+    - "https://www.fiverr.com/jalalkhan326"
+sass:
+  style: compressed
+exclude:
+  - README.md
+  - README.txt
+  - scripts
+  - vendor
+  - default.html
+  - header.html
+  - style.scss
 
 timezone: UTC
 markdown: kramdown
@@ -22,3 +43,4 @@ defaults:
       path: ""
     values:
       layout: page
+      image: /assets/images/profile.jpg

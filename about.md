@@ -15,12 +15,12 @@ I am a Biotechnology researcher focused on translational oncology and integrativ
 </div>
 
 <div class="hero-media">
-  <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=1600&q=80" alt="Biomedical research laboratory equipment and molecular workstations" />
+  <img src="{{ '/assets/images/portfolio-lab.svg' | relative_url }}" alt="Illustration of an experimental biology research workflow" width="1200" height="450" loading="lazy" decoding="async" />
 </div>
 
 ## Education
 
-**Master of Science in Biotechnology**, Pak Austria Fachhochschule Institute of Applied Sciences and Technology *(01/02/2024 to Current)*  
+**Master of Science in Biotechnology**, Pak Austria Fachhochschule Institute of Applied Sciences and Technology *(February 2024 – October 2026 · Completed)*  
 **Bachelor of Science in Biotechnology**, COMSATS University Islamabad *(2020 to 2024)*
 
 ## Professional Experience

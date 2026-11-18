@@ -766,3 +766,24 @@ em{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:#577d61}
 @media(max-width:700px){.nav-wrap{flex-direction:row;align-items:center;flex-wrap:wrap}.brand-text strong{font-size:.82rem}.brand-text small{font-size:.55rem}.menu-toggle:not([hidden]){display:block;background:none;border:1px solid var(--line);border-radius:4px;padding:.5rem .8rem;font-size:.75rem;color:var(--text)}.site-nav{width:100%;display:flex;flex-wrap:wrap;overflow:visible}.menu-toggle:not([hidden])~.site-nav{display:none}.menu-toggle:not([hidden])~.site-nav.is-open{display:flex}.site-nav a{padding:.8rem}.hero-grid,.two-col{grid-template-columns:1fr}.hero-grid{gap:2.5rem}.section,.section.hero{padding:3.5rem 0}.hero h1{font-size:clamp(2.9rem,11vw,4.8rem)}.hero-card{max-width:340px;width:100%;margin-inline:auto}.hero-intro{margin-top:1.5rem}.hero .eyebrow{font-size:.55rem}.contact-grid{grid-template-columns:1fr 1fr;gap:.8rem}.project-grid{grid-template-columns:1fr}.project-card{padding:1.5rem}.timeline-item{grid-template-columns:1fr;gap:.5rem}.timeline-item span{grid-row:auto}.timeline-item p{grid-column:1}.metric-row{grid-template-columns:repeat(3,minmax(0,1fr))}.metric-row strong{font-size:.92rem}.metric-row span{font-size:.65rem}.cta-panel{padding:2rem}.project-filters button{font-size:.68rem;padding:.5rem .7rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
+/* Readability, touch targets, and secondary-page consistency. */
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.brand-mark,.brand-text{flex-shrink:0}
+.footer-links{display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap}
+.footer-links a{display:inline-flex;align-items:center;min-height:44px}
+.contact-grid a{display:inline-flex;align-items:center;min-height:44px}
+.site-nav a,.menu-toggle,.project-filters button,.btn{min-height:44px}
+.project-card p,.skill-columns p,.timeline-item p,.hero-text{font-size:.95rem}
+.page-content h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.15;letter-spacing:-.035em}
+.page-content .project-card h2,.page-content .service-card h2{font-size:1.6rem}
+.page-content{overflow-wrap:anywhere}
+.page-content .contact-box{max-width:800px}
+.form-note{font-size:.8rem}
+input,textarea{border-bottom-color:var(--control-border);font-size:1rem}
+.contact-box>p:first-child{margin-top:0}
+.contact-box .btn{margin-bottom:.5rem}
+em{color:#476d50}
+@media(min-width:701px) and (max-width:1080px){.nav-wrap{flex-wrap:wrap}.site-nav{justify-content:flex-end;flex:1 1 560px}}
+@media(max-width:700px){.site-nav.is-open{display:grid!important;grid-template-columns:1fr 1fr;gap:.3rem}.site-nav a{border-radius:4px}.contact-grid{font-size:.8rem}.project-filters button{font-size:.8rem}.hero .eyebrow{font-size:.65rem;line-height:1.7}.brand-text small{font-size:.6rem}.brand-text strong{font-size:.9rem}.page-content h2{font-size:2rem}}
+@media print{.hero-card{break-inside:avoid}.menu-toggle,.project-filters{display:none!important}.project-card[hidden]{display:flex!important}.cta-panel{background:#fff;color:#183e38}.cta-panel h2,.cta-panel p,.cta-panel .contact-email,.cta-panel em{color:#183e38}}
+

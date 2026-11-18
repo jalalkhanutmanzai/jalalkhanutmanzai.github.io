@@ -19,6 +19,6 @@ if(toggle && nav) {
  const close = () => { toggle.setAttribute('aria-expanded','false'); nav.classList.remove('is-open'); };
  toggle.addEventListener('click',()=>{const open = toggle.getAttribute('aria-expanded') !== 'true'; toggle.setAttribute('aria-expanded',String(open)); nav.classList.toggle('is-open',open);});
  nav.addEventListener('click',e=>{if(e.target.closest('a'))close();});
- document.addEventListener('keydown',e=>{if(e.key==='Escape'){close();toggle.focus();}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape' && toggle.getAttribute('aria-expanded')==='true'){close();toggle.focus();}});
 }
 

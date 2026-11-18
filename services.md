@@ -52,5 +52,5 @@ description: "Research support, computational biology, scientific writing, and v
 <div class="closing-panel reveal-up">
   <p class="eyebrow">Project Inquiry</p>
   <h2>Send the research goal, required output, and deadline.</h2>
-  <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Send Project Brief</a>
+  <div class="button-row"><a class="btn btn-primary" href="{{ site.fiverr_url }}">Discuss your project on Fiverr ↗</a><a class="btn btn-secondary" href="{{ '/contact/' | relative_url }}">Send Project Brief</a></div>
 </div>
