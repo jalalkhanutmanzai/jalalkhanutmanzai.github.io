@@ -787,3 +787,12 @@ em{color:#476d50}
 @media(max-width:700px){.site-nav.is-open{display:grid!important;grid-template-columns:1fr 1fr;gap:.3rem}.site-nav a{border-radius:4px}.contact-grid{font-size:.8rem}.project-filters button{font-size:.8rem}.hero .eyebrow{font-size:.65rem;line-height:1.7}.brand-text small{font-size:.6rem}.brand-text strong{font-size:.9rem}.page-content h2{font-size:2rem}}
 @media print{.hero-card{break-inside:avoid}.menu-toggle,.project-filters{display:none!important}.project-card[hidden]{display:flex!important}.cta-panel{background:#fff;color:#183e38}.cta-panel h2,.cta-panel p,.cta-panel .contact-email,.cta-panel em{color:#183e38}}
 
+
+/* ProtocolIQ project case study */
+.protocoliq-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:2rem 0 3rem;padding:1.5rem 0;border-block:1px solid var(--line)}
+.protocoliq-summary span{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem}
+.protocoliq-summary strong{font-size:.92rem;font-weight:600}
+.protocoliq-preview{margin:2rem 0 3rem;background:#0c1422;border:1px solid var(--line);border-radius:8px;overflow:hidden;text-align:center}
+.protocoliq-preview img{display:block;width:auto;max-width:100%;height:auto;max-height:660px;margin-inline:auto}
+.protocoliq-preview figcaption{padding:1rem 1.5rem;background:var(--soft);color:var(--muted);font-size:.8rem;text-align:left}
+@media(max-width:700px){.protocoliq-summary{grid-template-columns:1fr;gap:1.2rem}.protocoliq-preview img{max-height:none;width:100%}}

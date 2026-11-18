@@ -9,7 +9,7 @@ document.querySelectorAll('.project-filters').forEach(group => {
  card.hidden = button.dataset.filter !== 'all' && !card.dataset.category.split(' ').includes(button.dataset.filter);
  if (!card.hidden) count++;
  });
- document.querySelector('.filter-status').textContent = count + ' research projects shown';
+ document.querySelector('.filter-status').textContent = count + ' projects shown';
  });
 });
 const toggle = document.querySelector('.menu-toggle');
