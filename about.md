@@ -1,11 +1,25 @@
 ---
 layout: page
-title: About
+title: About Jalal Khan
 permalink: /about/
-description: "About Jalal Khan Utman, a biotechnology researcher working across experimental biology, molecular modeling, and scientific communication."
+description: "Meet Jalal Khan Utman (Jalal Khan), biotechnology researcher in Haripur, Pakistan. Education, research experience, molecular modeling, and verified profile links."
+last_modified_at: 2026-11-18
+person_profile: true
 ---
 
-I am a Biotechnology researcher focused on translational oncology and integrative computational biology. My current work combines cell based experimental systems with in silico validation to study and communicate therapeutic research questions with clarity.
+I’m **Jalal Khan Utman**, also known as **Jalal Khan**, a biotechnology researcher based in **Haripur, Pakistan**. I completed my **MS Biotechnology at PAF-IAST in October 2026**, after a BS Biotechnology at COMSATS University Islamabad, Abbottabad Campus.
+
+My work focuses on translational oncology and integrative computational biology. I combine cell-based experimental systems with molecular docking and molecular dynamics simulations to study and communicate therapeutic research questions.
+
+## Professional profiles and contact
+
+This is my personal research portfolio. You can also find my work and contact me through these profiles:
+
+- [LinkedIn — Jalal Khan Utman]({{ site.linkedin_url }})
+- [GitHub — jalalkhanutmanzai](https://github.com/{{ site.github_username }})
+- [Fiverr — jalalkhan326]({{ site.fiverr_url }})
+- [Email Jalal Khan](mailto:{{ site.email }})
+- [Research portfolio]({{ '/portfolio/' | relative_url }}) and [scientific services]({{ '/services/' | relative_url }})
 
 <div class="highlight-panel">
   <h3>Professional Summary</h3>

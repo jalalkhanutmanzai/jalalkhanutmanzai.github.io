@@ -18,6 +18,7 @@ class Document(HTMLParser):
         self.descriptions = 0
         self.canonicals = []
         self.json_text = None
+        self.schemas = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -46,7 +47,7 @@ class Document(HTMLParser):
     def handle_endtag(self, tag):
         if tag == "script" and self.json_text is not None:
             try:
-                json.loads(self.json_text)
+                self.schemas.append(json.loads(self.json_text))
             except ValueError:
                 errors.append(f"{self.file}: invalid structured data")
             self.json_text = None
@@ -75,6 +76,17 @@ for file, doc in documents.items():
             errors.append(f"{doc.file}: missing anchor {link}")
 
 home = (ROOT / "index.html").read_text(encoding="utf-8")
+for relative in ("index.html", "about/index.html"):
+    profile = documents.get(ROOT / relative)
+    profiles = [schema for schema in profile.schemas if schema.get("@type") == "ProfilePage"] if profile else []
+    if len(profiles) != 1:
+        errors.append(f"{relative}: missing unique personal profile schema")
+        continue
+    person = profiles[0].get("mainEntity", {})
+    if person.get("@type") != "Person" or person.get("name") != "Jalal Khan Utman" or "Jalal Khan" not in person.get("alternateName", []):
+        errors.append(f"{relative}: incomplete identity information")
+    if len(person.get("sameAs", [])) != 3:
+        errors.append(f"{relative}: missing professional profile links")
 for expected in ("https://www.fiverr.com/jalalkhan326", "October 2026"):
     if expected not in home:
         errors.append(f"Homepage missing {expected}")

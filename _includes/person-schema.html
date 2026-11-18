@@ -1,0 +1,39 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": {{ page.url | absolute_url | append: '#profile' | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "name": {{ page.seo_title | default: page.title | jsonify }},
+  "dateModified": "{{ page.last_modified_at | date: '%Y-%m-%d' }}",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "{{ '/' | absolute_url }}#person",
+    "name": "Jalal Khan Utman",
+    "alternateName": ["Jalal Khan", "jalalkhanutmanzai", "jalalkhan326"],
+    "url": {{ '/' | absolute_url | jsonify }},
+    "image": {{ '/assets/images/profile.jpg' | absolute_url | jsonify }},
+    "description": "Jalal Khan Utman, also known as Jalal Khan, is a biotechnology researcher in Haripur, Pakistan, working across neuro-oncology, experimental biology, molecular modeling and scientific communication.",
+    "jobTitle": "Biotechnology Researcher",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Haripur",
+      "addressCountry": "PK"
+    },
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Pak-Austria Fachhochschule Institute of Applied Sciences and Technology (PAF-IAST)"},
+      {"@type": "CollegeOrUniversity", "name": "COMSATS University Islamabad, Abbottabad Campus"}
+    ],
+    "hasCredential": [
+      {"@type": "EducationalOccupationalCredential", "name": "Master of Science in Biotechnology", "credentialCategory": "Master's degree", "description": "Completed at PAF-IAST in October 2026."},
+      {"@type": "EducationalOccupationalCredential", "name": "Bachelor of Science in Biotechnology", "credentialCategory": "Bachelor's degree", "description": "Completed at COMSATS University Islamabad, Abbottabad Campus, in 2024."}
+    ],
+    "knowsAbout": ["Biotechnology", "Glioblastoma", "Molecular docking", "GROMACS molecular dynamics simulations", "Cell culture", "Nanobiotechnology", "Scientific visualization"],
+    "sameAs": [
+      {{ site.linkedin_url | jsonify }},
+      "https://github.com/{{ site.github_username }}",
+      {{ site.fiverr_url | jsonify }}
+    ]
+  }
+}
+</script>
