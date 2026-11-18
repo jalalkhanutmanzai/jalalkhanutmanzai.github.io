@@ -1,38 +1,24 @@
-const header = document.querySelector('[data-header]');
-const revealItems = document.querySelectorAll('.reveal-up');
-
-const updateHeader = () => {
-  if (!header) return;
-  header.classList.toggle('is-scrolled', window.scrollY > 14);
-};
-
-updateHeader();
-window.addEventListener('scroll', updateHeader, { passive: true });
-
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.14 }
-  );
-
-  revealItems.forEach(item => observer.observe(item));
-} else {
-  revealItems.forEach(item => item.classList.add('is-visible'));
+document.querySelectorAll('.project-filters').forEach(group => {
+ group.hidden = false;
+ group.addEventListener('click', e => {
+ const button = e.target.closest('button[data-filter]');
+ if (!button) return;
+ group.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
+ let count = 0;
+ document.querySelectorAll('#projects .project-card').forEach(card => {
+ card.hidden = button.dataset.filter !== 'all' && !card.dataset.category.split(' ').includes(button.dataset.filter);
+ if (!card.hidden) count++;
+ });
+ document.querySelector('.filter-status').textContent = count + ' research projects shown';
+ });
+});
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.site-nav');
+if(toggle && nav) {
+ toggle.hidden = false;
+ const close = () => { toggle.setAttribute('aria-expanded','false'); nav.classList.remove('is-open'); };
+ toggle.addEventListener('click',()=>{const open = toggle.getAttribute('aria-expanded') !== 'true'; toggle.setAttribute('aria-expanded',String(open)); nav.classList.toggle('is-open',open);});
+ nav.addEventListener('click',e=>{if(e.target.closest('a'))close();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){close();toggle.focus();}});
 }
 
-document.querySelectorAll('.feature-card, .service-card, .project-card, .skill-card, .bio-console').forEach(card => {
-  card.addEventListener('pointermove', event => {
-    const rect = card.getBoundingClientRect();
-    const x = ((event.clientX - rect.left) / rect.width) * 100;
-    const y = ((event.clientY - rect.top) / rect.height) * 100;
-    card.style.setProperty('--mx', `${x}%`);
-    card.style.setProperty('--my', `${y}%`);
-  });
-});

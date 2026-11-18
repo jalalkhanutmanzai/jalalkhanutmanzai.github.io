@@ -7,21 +7,21 @@ description: "Portfolio of Jalal Khan Utman, biotechnology researcher focused on
 <section class="hero section">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">Biotechnology Research Portfolio</p>
-      <h1>Jalal Khan Utman</h1>
-      <p class="hero-title">Biotechnology researcher focused on neuro-oncology, molecular modeling, and translational biomedical research.</p>
+      <p class="eyebrow"><span class="live-dot"></span> Biotechnology · Neuro-oncology · Molecular modeling</p>
+      <p class="hero-intro">Hello, I’m Jalal.</p><h1>Curiosity at the<br>cellular <em>level.</em></h1>
+      <p class="hero-title">I’m Jalal Khan Utman, a biotechnology researcher connecting experimental biology with computational insight.</p>
       <p class="hero-text">
         I bridge wet-lab biology with computational analysis through cell based assays, nanoparticle research, molecular docking, GROMACS MD simulations, and scientific visualization.
       </p>
       <div class="button-row">
-        <a class="btn btn-primary" href="{{ '/portfolio/' | relative_url }}">View Research Portfolio</a>
-        <a class="btn btn-secondary" href="{{ '/contact/' | relative_url }}">Contact Me</a>
+        <a class="btn btn-primary" href="#projects">Explore my research ↗</a>
+        <a class="btn btn-secondary" href="{{ '/contact/' | relative_url }}">Let’s connect ↗</a>
       </div>
     </div>
     <aside class="hero-card">
-      <img src="{{ site.baseurl }}/assets/images/profile.jpg" alt="Jalal Khan Utman" class="profile-img" />
+      <img src="{{ site.baseurl }}/assets/images/profile.jpg" alt="Jalal Khan Utman" class="profile-img" width="640" height="800" fetchpriority="high" />
       <div class="hero-card-body">
-        <p class="status">MS Biotechnology, PAF-IAST</p>
+        <p class="eyebrow">The researcher behind the work</p><p class="status">Jalal Khan Utman <span>↗</span></p><p>MS Biotechnology · PAF-IAST</p>
         <p>Experimental biology, molecular modeling, and scientific communication.</p>
       </div>
     </aside>
@@ -41,7 +41,7 @@ description: "Portfolio of Jalal Khan Utman, biotechnology researcher focused on
   <div class="container two-col">
     <div>
       <p class="eyebrow">About Me</p>
-      <h2>Dedicated biotechnology researcher bridging computational insights with biological realities.</h2>
+      <h2>From biological questions<br>to <em>meaningful insight.</em></h2>
     </div>
     <div>
       <p>
@@ -63,7 +63,7 @@ description: "Portfolio of Jalal Khan Utman, biotechnology researcher focused on
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Experience</p>
-      <h2>Academic, laboratory, and teaching experience.</h2>
+      <h2>A path shaped by<br>research & teaching.</h2>
     </div>
     <div class="timeline">
       <article class="timeline-item">
@@ -94,26 +94,26 @@ description: "Portfolio of Jalal Khan Utman, biotechnology researcher focused on
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Projects</p>
-      <h2>Research projects with wet-lab and computational depth.</h2>
+      <h2>Small molecules.<br><em>Big questions.</em></h2>
     </div>
-    <div class="project-grid">
-      <article class="project-card">
+    <div class="project-filters" role="group" aria-label="Filter research projects" hidden><button type="button" data-filter="all" aria-pressed="true">All research</button><button type="button" data-filter="computational" aria-pressed="false">Computational</button><button type="button" data-filter="experimental" aria-pressed="false">Experimental</button><button type="button" data-filter="nano" aria-pressed="false">Nanobiotechnology</button></div><p class="filter-status sr-only" aria-live="polite"></p><div class="project-grid">
+      <article class="project-card" data-category="computational" ><div class="project-number" aria-hidden="true">01 / RESEARCH</div>
         <p class="tag">Open Source Repository</p>
         <h3>GROMACS Protein-Ligand MD Protocol</h3>
-        <p>Lead developer of a production-ready Molecular Dynamics simulation protocol for protein-ligand complexes using GROMACS 2024.x, automated bash scripts, realistic MDP files, SLURM templates, CHARMM-GUI/CGenFF and ACPYPE/GAFF2 workflows.</p>
+        <p>Developer of a documented molecular dynamics simulation protocol for protein-ligand complexes using GROMACS 2024.x, automated bash scripts, realistic MDP files, SLURM templates, CHARMM-GUI/CGenFF and ACPYPE/GAFF2 workflows.</p>
         <a href="https://github.com/jalalkhanutmanzai/gromacs-md-protocol">View Repository</a>
       </article>
-      <article class="project-card">
+      <article class="project-card" data-category="experimental computational" ><div class="project-number" aria-hidden="true">02 / RESEARCH</div>
         <p class="tag">Master's Thesis</p>
         <h3>β-Ionone in Human Glioblastoma Cell Lines</h3>
         <p>Graduate research investigating the mechanism and therapeutic potential of β-Ionone in Glioblastoma T98G models through in-vitro experimentation, biochemical assays, molecular docking, and GROMACS based MD simulations.</p>
       </article>
-      <article class="project-card">
+      <article class="project-card" data-category="experimental nano" ><div class="project-number" aria-hidden="true">03 / RESEARCH</div>
         <p class="tag">Nanobiotechnology</p>
         <h3>Polydopamine Nanoparticles for Diabetic Wound Healing</h3>
         <p>Participation in synthesis, drug loading, and physicochemical characterization of PDA nanoparticles for diabetic wound healing research.</p>
       </article>
-      <article class="project-card">
+      <article class="project-card" data-category="experimental nano" ><div class="project-number" aria-hidden="true">04 / RESEARCH</div>
         <p class="tag">GBM Nanoparticles</p>
         <h3>Green Synthesis and Loading of ZnO Nanoparticles</h3>
         <p>Participation in green synthesis, drug loading, and characterization of ZnO nanoparticles for glioblastoma cell line studies.</p>
@@ -126,7 +126,7 @@ description: "Portfolio of Jalal Khan Utman, biotechnology researcher focused on
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Skills</p>
-      <h2>Laboratory, computational, and scientific communication skills.</h2>
+      <h2>At the bench.<br>In the simulation. On the page.</h2>
     </div>
     <div class="skill-columns">
       <article>
@@ -149,7 +149,7 @@ description: "Portfolio of Jalal Khan Utman, biotechnology researcher focused on
   <div class="container two-col">
     <div>
       <p class="eyebrow">Education</p>
-      <h2>Formal training in biotechnology and biomedical research.</h2>
+      <h2>Grounded in biology.<br>Driven by discovery.</h2>
     </div>
     <div class="education-list">
       <article><strong>Master of Science in Biotechnology</strong><span>PAF-IAST, Haripur, 2024 to Current</span></article>
@@ -163,7 +163,7 @@ description: "Portfolio of Jalal Khan Utman, biotechnology researcher focused on
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">Workshops and Scientific Activities</p>
-      <h2>Training, organizing, and conference participation.</h2>
+      <h2>Science grows<br>through sharing.</h2>
     </div>
     <div class="pill-cloud">
       <span>Cell Culture Techniques for Drug Discovery and Development, Organizer and Trainer</span>
@@ -181,7 +181,8 @@ description: "Portfolio of Jalal Khan Utman, biotechnology researcher focused on
 <section class="section cta-section">
   <div class="container cta-panel">
     <p class="eyebrow">Contact</p>
-    <h2>Open for research collaboration, scientific visualization, and computational biology support.</h2>
-    <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Send Inquiry</a>
+    <h2>Let’s explore the<br>next <em>question.</em></h2>
+    <p>Research collaboration, molecular modeling, or a clearer way to communicate your science.</p><a class="contact-email" href="mailto:{{ site.email }}">{{ site.email }} ↗</a><a class="btn btn-secondary" href="{{ '/contact/' | relative_url }}">More ways to connect ↗</a>
   </div>
 </section>
+

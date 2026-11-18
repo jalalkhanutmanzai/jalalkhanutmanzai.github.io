@@ -7,12 +7,13 @@
         <small>Biotechnology Researcher</small>
       </span>
     </a>
-    <nav class="site-nav" aria-label="Main navigation">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">+</span></button><nav id="main-nav" class="site-nav" aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}#profile">Profile</a>
       <a href="{{ '/' | relative_url }}#experience">Experience</a>
-      <a href="{{ '/' | relative_url }}#projects">Projects</a>
+      <a href="{{ '/' | relative_url }}#projects">Research</a>
       <a href="{{ '/' | relative_url }}#skills">Skills</a>
-      <a class="nav-button" href="{{ '/contact/' | relative_url }}">Contact</a>
+      <a class="nav-button" href="{{ '/contact/' | relative_url }}">Let’s talk ↗</a>
     </nav>
   </div>
 </header>
+
