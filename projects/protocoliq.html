@@ -2,74 +2,35 @@
 layout: page
 title: ProtocolIQ
 permalink: /projects/protocoliq/
-description: "ProtocolIQ by Jalal Khan Utman: an institute-owned laboratory operating system for inventory, scientific calculations, approvals, equipment and protocols."
-image: /assets/images/protocoliq-setup.jpg
+description: "ProtocolIQ by Jalal Khan Utman: an institute-owned laboratory operating system with separate admin and user panels, inventory, scientific calculations, SSO, MFA and optional AI."
+image: /assets/images/protocoliq-admin.png
 last_modified_at: 2026-11-18
 ---
-
 <div class="page-intro reveal-up">
-  <p class="eyebrow">Laboratory Software · Institute Edition</p>
-  <h2>A connected workspace for the everyday work of a research laboratory.</h2>
-  <p>ProtocolIQ brings laboratory calculations, chemical inventory, resource requests, equipment lending and protocol documentation into one web application. I developed it around the practical needs of research labs and educational institutions, with a setup that each institute can own and manage.</p>
-  <div class="button-row">
-    <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Discuss an institutional setup ↗</a>
-    <a class="btn btn-secondary" href="{{ '/#projects' | relative_url }}">Back to projects</a>
-  </div>
+<p class="eyebrow">Featured software · Enterprise 6.0</p>
+<h2>One laboratory workspace.<br>Clear control for every role.</h2>
+<p>ProtocolIQ is an institute-owned laboratory operating system and smart lab assistant. I designed and developed it to connect scientific calculations, chemical inventory, material approvals, equipment and laboratory protocols—with separate workspaces for administrators, staff and students.</p>
+<div class="button-row"><a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Discuss ProtocolIQ for your institute ↗</a><a class="btn btn-secondary" href="#product-tour">Explore the screens ↓</a></div>
 </div>
-
-<div class="protocoliq-summary">
-  <div><span>My role</span><strong>Development &amp; workflow design</strong></div>
-  <div><span>Delivery</span><strong>Institute-owned installation</strong></div>
-  <div><span>Verification</span><strong>36 automated checks passed</strong></div>
-</div>
-
-<h2>From a lab calculation to a shared workflow</h2>
-<p>A laboratory needs more than a calculator. Reagents belong to specific batches and labs, requests need approval, equipment needs a recorded borrower, and procedures need clear documentation. ProtocolIQ connects those steps while keeping access tied to individual roles and laboratory memberships.</p>
-
+<figure class="protocoliq-preview protocoliq-wide"><a href="{{ '/assets/images/protocoliq-admin.png' | relative_url }}"><img src="{{ '/assets/images/protocoliq-admin.png' | relative_url }}" alt="ProtocolIQ Enterprise 6.0 administrator panel with institute accounts, security, operations and audit controls." width="1280" height="720" fetchpriority="high" decoding="async"></a><figcaption>Administrator workspace · Actual application screenshot using a demonstration institute.</figcaption></figure>
+<div class="protocoliq-summary"><div><span>My role</span><strong>Product design &amp; full-stack development</strong></div><div><span>Delivery model</span><strong>Institute-owned setup &amp; credentials</strong></div><div><span>Verification</span><strong>60 automated tests passed</strong></div></div>
+<h2>Built around the way a lab works</h2>
+<p>A preparation calculation is only one part of an experiment. Materials must be available, requests approved, equipment accounted for and procedures reviewed. ProtocolIQ connects these steps while enforcing the person's role and assigned laboratories on the server.</p>
 <div class="feature-grid stagger-grid">
-  <article class="feature-card reveal-up">
-    <h3>Scientific calculations</h3>
-    <p>Molarity, stock dilutions, unit conversions, percent solutions and preparation guidance, including final-volume top-up and an optional 10% extra batch.</p>
-  </article>
-  <article class="feature-card reveal-up">
-    <h3>Inventory &amp; approvals</h3>
-    <p>Batch quantities, storage locations, expiry and low-stock alerts. Request approval checks compatible units and records stock deduction and usage together.</p>
-  </article>
-  <article class="feature-card reveal-up">
-    <h3>Equipment &amp; faults</h3>
-    <p>Asset registration, check-out and return logs, fault reports and recorded resolutions. Unresolved faults prevent further lending in the application.</p>
-  </article>
-  <article class="feature-card reveal-up">
-    <h3>People &amp; lab access</h3>
-    <p>Institution, department and lab structure, with individual student, staff and administrator accounts. Guest access supports exploring the bench and assay guides.</p>
-  </article>
-  <article class="feature-card reveal-up">
-    <h3>Protocols &amp; records</h3>
-    <p>A personal SOP editor, assay reference library, PDF export, inventory CSVs, activity records and backups covering the institute's labs.</p>
-  </article>
-  <article class="feature-card reveal-up">
-    <h3>Optional lab assistant</h3>
-    <p>Local calculation and stock routing, with an optional server-side Gemini or GROQ connection using authorized lab inventory. Each institute supplies its own provider configuration.</p>
-  </article>
+<article class="feature-card reveal-up"><h3>Calculate &amp; prepare</h3><p>Molarity, stock dilutions, unit conversions and solution preparation, with final-volume top-up guidance and an optional 10% extra batch.</p></article>
+<article class="feature-card reveal-up"><h3>Track &amp; approve</h3><p>Batch inventory, expiry and low-stock alerts, reasoned adjustments and a stock ledger. Approvals check units and deduct stock atomically, with retry and stale-edit protection.</p></article>
+<article class="feature-card reveal-up"><h3>Borrow &amp; maintain</h3><p>Equipment check-out and returns, borrower records, fault reporting, maintenance and calibration dates. Outstanding faults or overdue calibration block lending.</p></article>
+<article class="feature-card reveal-up"><h3>Write &amp; review</h3><p>Private SOP drafts, revision history and independent staff review before publication. Published procedures remain available while a new draft is prepared.</p></article>
+<article class="feature-card reveal-up"><h3>Protect access</h3><p>Individual accounts, laboratory memberships and distinct role controls. Configurable OpenID Connect SSO, authenticator MFA, one-use recovery codes and session management.</p></article>
+<article class="feature-card reveal-up"><h3>Ask with lab context</h3><p>A local calculation router and optional server-side Gemini or Groq assistant using authorized inventory context. The institute supplies its own provider credentials.</p></article>
 </div>
-
-<h2>Designed for the receiving institute</h2>
-<p>A fresh installation opens a first-run wizard. The institute enters its name, departments, laboratories and its own administrator credentials, then adds team accounts and lab memberships. The default edition stores data on the institute's computer or server; a personal Google or Firebase account is not required.</p>
-<figure class="protocoliq-preview">
-  <img src="{{ '/assets/images/protocoliq-setup.jpg' | relative_url }}" alt="ProtocolIQ first-run setup screen with fields for institute name, department, laboratories and an administrator account." width="653" height="1342" loading="lazy" decoding="async" />
-  <figcaption>First-run setup for a fresh institute installation. No default administrator or personal AI key is bundled.</figcaption>
-</figure>
-
-<h2>Engineering &amp; validation</h2>
-<p>The frontend keeps authentication, data management, scientific computation, chat routing and application control in separate JavaScript modules. A Node.js server and SQLite database handle the independent institutional edition. Optional Firebase support remains available for institutions choosing their own cloud setup.</p>
-<div class="pill-cloud reveal-up">
-  <span class="pill">HTML5 &amp; Vanilla JavaScript</span><span class="pill">Tailwind CSS</span>
-  <span class="pill">Node.js &amp; SQLite</span><span class="pill">Role-Based Access</span>
-  <span class="pill">Chart.js &amp; jsPDF</span><span class="pill">Optional Firebase</span>
-  <span class="pill">Gemini / GROQ</span>
-</div>
-<p>Verification covers calculation cases, role and lab boundaries, persistence, request approval and repeat-approval protection, equipment lending, backups and server access checks. Browser checks exercised the main workflows and the independent institute setup. Deployment configuration and scientific procedures still require the receiving institution's own acceptance and approved SOPs.</p>
-<div class="button-row">
-  <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Ask about ProtocolIQ ↗</a>
-  <a class="btn btn-secondary" href="{{ '/portfolio/' | relative_url }}">Explore the full portfolio</a>
-</div>
+<h2 id="product-tour">A workspace for each responsibility</h2>
+<p>Administrators manage the institute, staff run laboratory operations, and students focus on their own work. Interface controls reflect permissions enforced by the backend.</p>
+<div class="protocoliq-roles"><article><span class="eyebrow">01 / ADMINISTRATOR</span><h3>Institute control</h3><p>Departments, labs, accounts, permissions, identity policy, AI settings, audit and recovery.</p></article><article><span class="eyebrow">02 / LAB STAFF</span><h3>Daily operations</h3><p>Inventory, approvals, equipment maintenance, protocol review and laboratory analytics.</p></article><article><span class="eyebrow">03 / STUDENT &amp; USER</span><h3>Personal workspace</h3><p>Own requests, assigned-lab resources, equipment borrowing, protocols and account security.</p></article></div>
+<figure class="protocoliq-preview protocoliq-wide"><a href="{{ '/assets/images/protocoliq-user.png' | relative_url }}"><img src="{{ '/assets/images/protocoliq-user.png' | relative_url }}" alt="ProtocolIQ student workspace showing personal requests, equipment, research tools and account security without administrative controls." width="1280" height="720" loading="lazy" decoding="async"></a><figcaption>Student workspace · Personal workflows and laboratory access, without administrator controls. Click either screenshot to view it at full size.</figcaption></figure>
+<h2>The institute owns the setup</h2><p>The first-run wizard creates an institute's departments, labs and first administrator. The administrator adds individual accounts and laboratory memberships. Local operations need no personal Google or Firebase account; optional AI and identity-provider connections use the institute's credentials.</p>
+<details class="protocoliq-details"><summary>See the first-run setup screen</summary><figure class="protocoliq-preview"><img src="{{ '/assets/images/protocoliq-setup.jpg' | relative_url }}" alt="ProtocolIQ institute setup wizard asking for institution, laboratories and administrator credentials." width="653" height="1342" loading="lazy" decoding="async"><figcaption>First-run setup from the earlier Institute Edition. The current delivery also supports a protected cloud setup token.</figcaption></figure></details>
+<h2>Engineering behind the experience</h2><p>The six-part frontend separates authentication, data, calculations, chat routing and application control. Node.js handles server authorization and provider calls. SQLite supports a single institute server; a PostgreSQL adapter supplies shared records and sessions for cloud deployments. Docker and HTTPS deployment templates accompany the delivery.</p>
+<div class="pill-cloud reveal-up"><span class="pill">Vanilla JavaScript</span><span class="pill">Tailwind CSS</span><span class="pill">Node.js</span><span class="pill">SQLite / PostgreSQL</span><span class="pill">OpenID Connect</span><span class="pill">Authenticator MFA</span><span class="pill">Chart.js &amp; jsPDF</span><span class="pill">Gemini / Groq</span></div>
+<h2>Verified delivery, with clear deployment boundaries</h2><p>The 60-test suite covers scientific calculations, role and lab isolation, stock transactions, protocol review, session controls, encrypted secrets, audit integrity and MFA enrollment/recovery. PostgreSQL integration was exercised with a PostgreSQL-in-WASM database. The extracted delivery package starts with its bundled production dependencies, and admin/user panels were checked in the browser.</p><p>Live hosting, real identity-provider activation and multi-host load or failover testing are completed in the receiving institute's environment. Screens show demonstration accounts, not customer deployments. Laboratory procedures require the institution's own review and approved SOPs.</p>
+<div class="button-row"><a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Discuss an institutional setup ↗</a><a class="btn btn-secondary" href="{{ '/portfolio/' | relative_url }}">Explore more projects</a></div>
